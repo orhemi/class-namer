@@ -1,0 +1,8 @@
+<div class="list-container d-flex flex-column flex-1">
+  <app-word
+    *ngFor="let wordCount of wordsCounts"
+    class="word-container"
+    [word]="wordCount.word"
+    [size]="getWordSize(wordCount.count)"></app-word>
+</div>
+
